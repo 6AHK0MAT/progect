@@ -1,0 +1,13 @@
+{% extends "layouts/main.html" %}
+
+{% set title = "Waltex | Главная" %}
+{% set activeMenuItem = "1" %}
+
+{% block content %}
+    {% include "../blocks/short-description/short-description.html" %}
+    {% include "../blocks/function/function.html" %}
+    {% include "../blocks/capabilities/capabilities.html" %}
+    {% include "../blocks/indicators/indicators.html" %}
+    {% include "../blocks/cost/cost.html" %}
+    {% include "../blocks/registration-section/registration-section.html" %}
+{% endblock %}

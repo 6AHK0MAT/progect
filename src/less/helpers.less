@@ -1,0 +1,41 @@
+.center-block {
+  float: none;
+}
+
+.placeholder(@rules){
+  &::-webkit-input-placeholder{
+    @rules();
+  }
+  &:-moz-placeholder{
+    @rules();
+  }
+  &::-moz-placeholder{
+    @rules();
+  }
+  &:-ms-input-placeholder{
+    @rules();
+  }
+}
+
+.list {
+  &-unstyled {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.vertical-centering (@height: 100%) {
+  &:after {
+    content: '';
+    display:inline-block;
+    vertical-align:middle;
+    height:@height;
+    width:0;
+  }
+}

@@ -1,0 +1,74 @@
+{% set capabilitiesItems = [
+{
+  'desc':'Планирование расходов и доходов',
+  'class':'plan'
+},{
+  'desc':'Ведение базы клиентов',
+  'class':'client'
+},{
+  'desc':'Выставление счетов и закрывающих документов',
+  'class':'document'
+},{
+  'desc':'Импорт банковских выписок и ваших управленческих таблиц',
+  'class':'import'
+},{
+  'desc':'Работает в облаке',
+  'class':'cloud'
+},{
+  'desc':'Многопользовательский доступ',
+  'class':'multi-user'
+},{
+  'desc':'История изменения записей',
+  'class':'history'
+},{
+  'desc':'Не ограниченное количество проектов',
+  'class':'project'
+},{
+  'desc':'Экспорт ваших записей',
+  'class':'export'
+},{
+  'desc':'Резервное копирование',
+  'class':'backup'
+}] %}
+
+<section class="capabilities section">
+    <div class="container">
+        <div class="row">
+            <span class="section-icon center-block"></span>
+        </div>
+        <div class="row">
+            <p class="capabilities__title section-title col-lg-12 col-md-12">
+                Дополнительные возможности
+            </p>
+        </div>
+        <div class="row swipe" id="content-slider">
+            <div class="capabilities__lists swipe-wrap">
+                <ul class="capabilities__list col-lg-4 col-md-4 col-lg-offset-1 col-md-offset-1">
+                    {% for item in capabilitiesItems %}
+                        {% if loop.index < 6 %}
+                            <li class="capabilities__item item-{{ loop.index }} {{ item.class }}">
+                                <span>{{ item.desc }}</span>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+                <ul class="capabilities__list col-lg-4 col-md-4 col-lg-offset-2 col-md-offset-2">
+                    {% for item in capabilitiesItems %}
+                        {% if loop.index > 5 %}
+                            <li class="capabilities__item item-{{ loop.index }} {{ item.class }}">
+                                <span>{{ item.desc }}</span>
+                            </li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="capabilities__controls is-visible-xs">
+            <span class="capabilities__control prev" role="button" data-state="disabled"></span>
+            <span class="capabilities__control next" role="button" data-state="enabled"></span>
+        </div>
+        <div class="row">
+            {% include "../service-integration/service-integration.html" %}
+        </div>
+    </div>
+</section>

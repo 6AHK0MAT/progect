@@ -1,0 +1,101 @@
+.services-integration {
+  width: 85.4%;
+  margin-top: 20px;
+  padding: 0 0 66px;
+  border-radius: 10px;
+  border: 2px solid;
+  border-color: @si-border-color;
+
+  @media @screen-no-retina {
+    margin-top: 12px;
+    padding: 0 0 13px;
+    border-radius: 10px /2;
+    border-width: 2px /2;
+  }
+
+  &__title, &__amocrm, &__webasys {
+    width: 100% /3;
+  }
+
+  &__title {
+    color: @si-title-color;
+    font-size: 55.99px;
+    line-height: 50.296px;
+    margin-top: 122px;
+    padding-left: 6%;
+
+    @media @screen-no-retina {
+      font-size: 55.99px /2;
+      margin-top: 45px;
+    }
+  }
+  &__amocrm, &__webasys {
+    img {
+      height: auto;
+    }
+  }
+  &__amocrm {
+    margin-top: 72px;
+    padding-left: 3%;
+
+    @media @screen-no-retina {
+      margin-top: 72px /2;
+    }
+
+    img {
+      width: 336px;
+
+      @media @screen-no-retina {
+        width: 336px /2;
+      }
+    }
+  }
+  &__webasys {
+    margin-top: 79px;
+    margin-left: -6.9%;
+
+    @media @screen-no-retina {
+      margin-top: 79px /2;
+    }
+
+    img {
+      width: 308px;
+      margin-left: 2%;
+
+      @media @screen-no-retina {
+        width: 308px /2;
+      }
+    }
+
+    p {
+      margin-top: 12px;
+    }
+  }
+  &__description {
+    color: @si-description-color;
+    font-size: 34px;
+    line-height: 24px;
+
+    @media @screen-no-retina {
+      font-size: 32px /2;
+    }
+
+    span {
+      display: inline-block;
+      background-color: @si-label-bg-color;
+      color: @si-label-text-color;
+      font-size: 30px;
+      line-height: 1px;
+      margin-left: 35px;
+      padding: 22px 16px;
+      border-radius: 20px;
+
+      @media @screen-no-retina {
+        font-size: 30px /2;
+        margin-left: 35px /2;
+        padding: 13px (16px /2);
+        border-radius: 20px /2;
+      }
+    }
+  }
+}

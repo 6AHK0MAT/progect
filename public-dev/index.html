@@ -1,0 +1,374 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Waltex | Главная</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="../../js/jquery.min.js" type="text/javascript"></script>
+    <script src="../../js/script.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <header class="header collapse">
+        <div class="container">
+            <div class="row">
+                <div class="header__logo col-md-2 col-lg-2">
+                    <a href="/" role="button"><img src="/media/imgs/logo-header.png" alt=""></a>
+                </div>
+                <nav class="header__menu col-md-7 col-lg-7">
+                    <ul class="clearfix">
+                        <a href="/">
+                            <li class="header__menuitem active item-1">Главная</li>
+                        </a>
+                        <a href="#">
+                            <li class="header__menuitem  item-2">Возможности</li>
+                        </a>
+                        <a href="#">
+                            <li class="header__menuitem  item-3">Цены</li>
+                        </a>
+                        <a href="#">
+                            <li class="header__menuitem  item-4">Помощь</li>
+                        </a>
+                    </ul>
+                </nav>
+                <div class="header__user col-md-3 col-lg-3 pull-right">
+                    <button role="button" class="header__user-button button disabled sign-in" data-popup-target="#popup-sign-in">Регистрация</button>
+                    <button role="button" class="header__user-button button default log-in" data-popup-target="#popup-log-in">Вход</button>
+                </div>
+                <span id="mobile-menu-button" class="mobile-menu__button" role="button"></span>
+                <div class="mobile-menu is-hidden col-md-12">
+                    <ul class="mobile-menu__menu">
+                        <a href="/">
+                            <li class="mobile-menu__item item-1 active">Главная</li>
+                        </a>
+                        <a href="#">
+                            <li class="mobile-menu__item item-2 ">Возможности</li>
+                        </a>
+                        <a href="#">
+                            <li class="mobile-menu__item item-3 ">Цены</li>
+                        </a>
+                        <a href="#">
+                            <li class="mobile-menu__item item-4 ">Помощь</li>
+                        </a>
+                    </ul>
+                </div>
+                <span id="mobile-user-button" class="mobile-user__button" role="button"></span>
+                <div class="mobile-user is-hidden"></div>
+            </div>
+        </div>
+    </header>
+    <div class="page">
+        <div class="page__content">
+            <section class="short-description section">
+                <div class="container">
+                    <div class="row">
+                        <p class="short-description__title section-title col-lg-12 col-md-12">
+                            <span>Управленческий учет онлайн - </span><br> для владельцев малого и среднего бизнеса
+                        </p>
+                        <p class="short-description__subtitle section-subtitle col-lg-12 col-md-12">
+                            Сэкономьте ваше время и деньги на построение управленческого учета
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="short-description__list col-lg-3 col-md-3 col-lg-offset-1 col-md-offset-1">
+                            <p class="short-description__list-button" role="button">Основные возможности<span class="arrow down"></span></p>
+                            <ul class="section-list">
+                                <li class="short-description__item section-list-item item-1">Учет доходов и расходов</li>
+                                <li class="short-description__item section-list-item item-2">Бюджетирование и планирование</li>
+                                <li class="short-description__item section-list-item item-3">Выставление счетов</li>
+                                <li class="short-description__item section-list-item item-4">Учет базы клиентов</li>
+                                <li class="short-description__item section-list-item item-5">Финансовая аналитика</li>
+                            </ul>
+                            <a href="#" class="short-description__button button default is-hidden-xs" role="button">Попробуйте <strong>30 дней</strong> бесплатно</a>
+                        </div>
+                        <div class="short-description__img col-lg-7 col-md-7 col-lg-offset-1 col-md-offset-1">
+                            <a href="#" class="short-description__button button default is-visible-xs" role="button">Попробуйте <strong>30 дней</strong> бесплатно</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="short-description__description">
+                <div class="container">
+                    <div class="row">
+                        <p class="col-lg-10 col-md-10 center-block">
+                            Если вы ищете онлайн программу для управленческого учета, без сложных терминалов и с возможностью выставления счетов то Waltex вам идеально подойдет
+                        </p>
+                    </div>
+                    <div class="row"><span class="section-icon arrow"></span></div>
+                </div>
+            </section>
+            <section class="function section">
+                <div class="container">
+                    <div class="row">
+                        <span class="section-icon center-block"></span>
+                    </div>
+                    <div class="row">
+                        <p class="function__title section-title col-lg-12 col-md-12">
+                            Автоматизируйте финансовый анализ вашего бизнеса <br>
+                            <span>Waltex покажет какая у вас</span>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="function__img col-lg-7 col-md-7 is-hidden-xs"></div>
+                        <ul class="function__list section-list col-lg-5 col-md-5 col-lg-offset-1 col-md-offset-1">
+                            <li class="function__item section-list-item item-1">Выручка всего бизнеса и его доходность</li>
+                            <li class="function__item section-list-item item-2">Выручка по направлениям бизнеса</li>
+                            <li class="function__item section-list-item item-3">Состояние счетов и анализ выручки по каждому счету</li>
+                            <li class="function__item section-list-item item-4">Структура расходов</li>
+                            <li class="function__item section-list-item item-5">Количество заказов</li>
+                            <li class="function__item section-list-item item-6">Средний чек</li>
+                            <li class="function__item section-list-item item-7">Стоимость привлечения одного клиента</li>
+                            <li class="function__item section-list-item item-8">Выручка по клиентам</li>
+                            <li class="function__item section-list-item item-9">Выручка по менеджерам</li>
+                        </ul>
+                        <div class="function__img is-visible-xs"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="capabilities section">
+                <div class="container">
+                    <div class="row">
+                        <span class="section-icon center-block"></span>
+                    </div>
+                    <div class="row">
+                        <p class="capabilities__title section-title col-lg-12 col-md-12">
+                            Дополнительные возможности
+                        </p>
+                    </div>
+                    <div class="row swipe" id="content-slider">
+                        <div class="capabilities__lists swipe-wrap">
+                            <ul class="capabilities__list col-lg-4 col-md-4 col-lg-offset-1 col-md-offset-1">
+                                <li class="capabilities__item item-1 plan">
+                                    <span>Планирование расходов и доходов</span>
+                                </li>
+                                <li class="capabilities__item item-2 client">
+                                    <span>Ведение базы клиентов</span>
+                                </li>
+                                <li class="capabilities__item item-3 document">
+                                    <span>Выставление счетов и закрывающих документов</span>
+                                </li>
+                                <li class="capabilities__item item-4 import">
+                                    <span>Импорт банковских выписок и ваших управленческих таблиц</span>
+                                </li>
+                                <li class="capabilities__item item-5 cloud">
+                                    <span>Работает в облаке</span>
+                                </li>
+                            </ul>
+                            <ul class="capabilities__list col-lg-4 col-md-4 col-lg-offset-2 col-md-offset-2">
+                                <li class="capabilities__item item-6 multi-user">
+                                    <span>Многопользовательский доступ</span>
+                                </li>
+                                <li class="capabilities__item item-7 history">
+                                    <span>История изменения записей</span>
+                                </li>
+                                <li class="capabilities__item item-8 project">
+                                    <span>Не ограниченное количество проектов</span>
+                                </li>
+                                <li class="capabilities__item item-9 export">
+                                    <span>Экспорт ваших записей</span>
+                                </li>
+                                <li class="capabilities__item item-10 backup">
+                                    <span>Резервное копирование</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="capabilities__controls is-visible-xs">
+                        <span class="capabilities__control prev" role="button" data-state="disabled"></span>
+                        <span class="capabilities__control next" role="button" data-state="enabled"></span>
+                    </div>
+                    <div class="row">
+                        <div class="services-integration col-lg-10 col-md-10 center-block">
+                            <div class="row">
+                                <div class="services-integration__title col-lg-3 col-md-3">Интеграция с</div>
+                                <div class="services-integration__amocrm col-lg-3 col-md-3">
+                                    <img src="media/imgs/amocrm-logo.png" alt="AmoCRM">
+                                    <p class="service-integration__description">Виджет для AmoCRM</p>
+                                </div>
+                                <div class="services-integration__webasys col-lg-3 col-md-3">
+                                    <img src="media/imgs/webasys-logo.png" alt="Webasyst">
+                                    <p class="services-integration__description">Виджет для Webasyst <span>Скоро</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="indicators section">
+                <div class="container">
+                    <div class="row">
+                        <p class="indicators__title section-title col-lg-9 col-md-9 col-lg-offset-1 col-md-offset-1">
+                            Заносите <strong>доходы и расходы</strong>, все отчеты система сформирует автоматически и покажет <strong>на графиках и таблицах</strong> важнейшие <span>показатели вашего бизнеса</span>
+                        </p>
+                    </div>
+                    <div class="row relative-block">
+                        <ul class="indicators__list section-list col-lg-6 col-md-6">
+                            <li class="indicators__item section-list-item item-1">Сколько денег приносит бизнес</li>
+                            <li class="indicators__item section-list-item item-2">Куда уходят деньги</li>
+                            <li class="indicators__item section-list-item item-3">Как оптимизировать расходы</li>
+                            <li class="indicators__item section-list-item item-4">На чем компания зарабатывает больше всего</li>
+                            <li class="indicators__item section-list-item item-5">Какие клиенты приносят вам больше всего денег</li>
+                        </ul>
+                        <div class="indicators__img col-lg-6 col-md-6"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="cost section">
+                <div class="container">
+                    <div class="row">
+                        <span class="section-icon center-block"></span>
+                    </div>
+                    <div class="row">
+                        <p class="cost__title section-title col-lg-12 col-md-12">
+                            Стоимость сервиса
+                        </p>
+                        <p class="cost__subtitle col-lg-12 col-md-12">
+                            Включены все возможности сервиса
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="cost__items col-lg-3 col-md-3">
+                            <div class="cost__item">
+                                <div class="cost__item-month">1 мес</div>
+                                <div class="cost__item-old">990 р.</div>
+                                <div class="cost__item-new">690 р.</div>
+                            </div>
+                        </div>
+                        <div class="cost__items col-lg-3 col-md-3">
+                            <div class="cost__item">
+                                <div class="cost__item-month">3 мес</div>
+                                <div class="cost__item-old">2 790 р.</div>
+                                <div class="cost__item-new">1 790 р.</div>
+                            </div>
+                        </div>
+                        <div class="cost__items col-lg-3 col-md-3">
+                            <div class="cost__item">
+                                <div class="cost__item-month">6 мес</div>
+                                <div class="cost__item-old">3 990 р.</div>
+                                <div class="cost__item-new">2 990 р.</div>
+                            </div>
+                        </div>
+                        <div class="cost__items col-lg-3 col-md-3">
+                            <div class="cost__item">
+                                <div class="cost__item-month">12 мес</div>
+                                <div class="cost__item-old">5 790 р.</div>
+                                <div class="cost__item-new">4 790 р.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="registration-section section">
+                <div class="container">
+                    <div class="row">
+                        <p class="registration-section__title section-title col-lg-12 col-md-12">
+                            <span>Готовы начать?</span> — 30 дней бесплатно
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="registration-section__form col-lg-10 col-md-10 center-block">
+                            <form action="" class="row">
+                                <div class="registration-section__field field-group email clearfix">
+                                    <label class="field-icon email" for="email"></label>
+                                    <input type="text" class="field" name="email" placeholder="Адрес электронной почты">
+                                </div>
+                                <div class="registration-section__field field-group password clearfix">
+                                    <label class="registration-section__field field-icon password" for="password"></label>
+                                    <input type="text" class="field" name="password" placeholder="Пароль">
+                                </div>
+                                <input type="submit" class="registration-section__button button submit" role="button" value="Зарегистрироваться">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer__logo col-md-2 col-lg-2">
+                    <a href="/" role="button"><img src="/media/imgs/logo-footer.png" alt=""></a>
+                </div>
+                <div class="footer__menu col-md-4 col-lg-4 row">
+                    <ul class="clearfix">
+                        <a href="#">
+                            <li class="footer__menuitem item-1 col-md-6 col-lg-6">O Waltex</li>
+                        </a>
+                        <a href="#">
+                            <li class="footer__menuitem item-2 col-md-6 col-lg-6">Договор оферты</li>
+                        </a>
+                        <a href="#">
+                            <li class="footer__menuitem item-3 col-md-6 col-lg-6">Блог</li>
+                        </a>
+                        <a href="#">
+                            <li class="footer__menuitem item-4 col-md-6 col-lg-6">Партнерская программа</li>
+                        </a>
+                        <a href="#">
+                            <li class="footer__menuitem item-5 col-md-6 col-lg-6">Помощь</li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="footer__contacts col-md-4 col-lg-4 pull-right">
+                    <div class="row">
+                        <p class="col-md-6 col-lg-6 contacts-title">Мы в социальных сетях</p>
+                        <div class="social-links col-md-6 col-lg-6">
+                            <a href="#" title="YouTube" class="social-links__icon yt"></a>
+                            <a href="#" title="Instagram" class="social-links__icon ig"></a>
+                            <a href="#" title="Facebook" class="social-links__icon fb"></a>
+                            <a href="#" title="ВКонтакте" class="social-links__icon vk"></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p class="col-md-6 col-lg-6 footer__requisites contacts-title"><a href="#">Реквизиты</a></p>
+                    </div>
+                    <div class="row footer__copyright">
+                        <p class="col-md-6 col-lg-6">ООО "Вальтекс Онлайн"</p>
+                        <p class="col-mg-6 col-lg-6">
+                            <script>
+                                var mdate = new Date();
+                                document.write(mdate.getFullYear());
+                            </script> Все права защищены</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section id="popup-sign-in" class="popup-sign-in popup">
+        <div class="popup-sign-in__title popup-title">Регистрация</div>
+        <form action="#" method="post" class="popup-sign-in__form">
+            <div class="popup-sign-in__field field-group email">
+                <label for="email" class="field-icon email"></label>
+                <input type="text" class="field" placeholder="Адрес электронной почты" id="email">
+            </div>
+            <div class="popup-sign-in__field field-group password">
+                <label for="password" class="field-icon password"></label>
+                <input type="text" class="field" placeholder="Пароль" id="password">
+            </div>
+            <div class="popup-sign-in__field field-group iagree check">
+                <input type="checkbox" id="iagree" class="control">
+                <label for="iagree" class="field-control-label iagree" role="button">Согласен с <a href="#">договором оферты</a></label>
+            </div>
+            <input class="popup-sign-in__button button submit" role="button" value="Зарегистрироваться" type="submit">
+        </form>
+        <div class="popup-sign-in__button-close popup-close" role="button"></div>
+    </section>
+    <section id="popup-log-in" class="popup-log-in popup">
+        <div class="popup-log-in__title popup-title">Вход</div>
+        <form action="#" method="post" class="popup-log-in__form">
+            <div class="popup-log-in__field field-group email">
+                <label for="email" class="field-icon email"></label>
+                <input type="text" class="field" placeholder="Адрес электронной почты" id="email">
+            </div>
+            <div class="popup-log-in__field field-group password">
+                <label for="password" class="field-icon password"></label>
+                <input type="text" class="field" placeholder="Пароль" id="password">
+            </div>
+            <input class="popup-log-in__button button submit" role="button" value="Войти" type="submit">
+            <a href="#" class="popup-log-in__remind-password remind-password">Восстановить пароль</a>
+        </form>
+        <div class="popup-log-in__button-close popup-close" role="button"></div>
+    </section>
+</body>
+
+</html>

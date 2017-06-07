@@ -1,0 +1,85 @@
+.registration-section {
+  background-color: @rs-bg-color;
+  padding: 125px 0 132px;
+  position: relative;
+
+  @media @screen-no-retina {
+    padding: 57px 0 46px;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    width: 141px;
+    height: 35px;
+    background: url(../media/imgs/registration-section-arrow.png) no-repeat center /contain;
+    position: absolute;
+    top: -35px;
+    left: 47.3%;
+
+    @media @screen-no-retina {
+      width: 141px /2;
+      height: 35px /2;
+      top: -12px;
+    }
+  }
+
+  &__title {
+    color: @rs-title-color;
+    font-size: 64px;
+    line-height: 1;
+    text-align: center;
+
+    text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.22);
+
+    @media @screen-no-retina {
+      font-size: 64px /2;
+    }
+
+    span {
+      color: @rs-title-span-color;
+      font-weight: bold;
+    }
+  }
+  &__form {
+    max-width: 1780px;
+    margin-top: 81px;
+
+    @media @screen-no-retina {
+      max-width: 1780px /2;
+      margin-top: 27px;
+    }
+
+    form {
+      vertical-align: middle;
+      text-align: center;
+    }
+  }
+  &__field {
+    &.email {
+      width: 764px;
+      margin-right: 39px;
+
+      @media @screen-no-retina {
+        width: 764px /2;
+        margin-right: 22px;
+      }
+    }
+    &.password {
+      width: 500px;
+      margin-right: 62px;
+
+      @media @screen-no-retina {
+        width: 500px /2;
+        margin-right: 22px;
+      }
+    }
+  }
+  &__button {
+    vertical-align: bottom;
+
+    @media @screen-no-retina {
+      padding: 12px 24px !important;
+    }
+  }
+}

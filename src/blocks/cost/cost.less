@@ -1,0 +1,87 @@
+.cost {
+  background-color: @cost-bg-color;
+  padding: 99px 0 125px;
+
+  @media @screen-no-retina {
+    padding: 36px 0 (125px /2);
+  }
+
+  &__title, &__subtitle {
+    text-align: center;
+  }
+  &__title {
+    margin: 0;
+    color: @cost-title-color;
+    font-size: 64px;
+    font-weight: bold;
+    line-height: 50.296px;
+
+    @media @screen-no-retina {
+      font-size: 64px /2;
+      margin-top: 9px;
+      line-height: 1;
+    }
+  }
+  &__subtitle {
+    margin-top: 32px;
+    color: @cost-subtitle-color;
+    font-size: 40px;
+    line-height: 50.296px;/* Приближение из-за подстановки шрифтов */
+
+    @media @screen-no-retina {
+      margin-top: 13px;
+      font-size: 40px /2;
+      line-height: 1;
+    }
+  }
+  &__items {}
+  &__item {
+    width: 100%;
+    margin-top: 105px;
+    box-shadow: 1px 0 2px 1px fade(#000,20%);
+    color: @cost-item-color;
+    text-align: center;
+
+    @media @screen-no-retina {
+      margin-top: 105px /2;
+    }
+
+    &-month {
+      background-color: @cost-item-month-bg-color;
+      border-bottom: 2px solid @cost-item-month-border-color;
+      font-size: 40px;
+      line-height: 50.296px;
+
+      @media @screen-no-retina {
+        border-width: 2px /2;
+        font-size: 40px /2;
+        line-height: 1;
+        padding: 6px 0 16px;
+      }
+    }
+    &-old {
+      color: fade(@cost-item-color, 70%);
+      font-family: 'Proxima Nova Lt';
+      font-size: 43.99px;
+      line-height: 50.296px;
+      text-decoration: line-through;
+
+      @media @screen-no-retina {
+        font-size: 43.99px /2;
+        padding-top: 11px;
+      }
+    }
+    &-new {
+      font-size: 52px;
+      font-weight: 400;
+      line-height: 50.296px;
+      padding-bottom: 52px;
+
+      @media @screen-no-retina {
+        font-size: 52px /2;
+        line-height: 1;
+        padding-bottom: 52px /2;
+      }
+    }
+  }
+}

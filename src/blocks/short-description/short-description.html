@@ -1,0 +1,39 @@
+{% set shortDescriptionListItems = ["Учет доходов и расходов","Бюджетирование и планирование","Выставление счетов","Учет базы клиентов","Финансовая аналитика"] %}
+
+<section class="short-description section">
+    <div class="container">
+        <div class="row">
+            <p class="short-description__title section-title col-lg-12 col-md-12">
+                <span>Управленческий учет онлайн - </span><br>
+                для владельцев малого и среднего  бизнеса
+            </p>
+            <p class="short-description__subtitle section-subtitle col-lg-12 col-md-12">
+                Сэкономьте ваше время и деньги на построение управленческого учета
+            </p>
+        </div>
+        <div class="row">
+            <div class="short-description__list col-lg-3 col-md-3 col-lg-offset-1 col-md-offset-1">
+                <p class="short-description__list-button" role="button">Основные возможности<span class="arrow down"></span></p>
+                <ul class="section-list">
+                {% for item in shortDescriptionListItems %}
+                    <li class="short-description__item section-list-item item-{{ loop.index }}">{{ item }}</li>
+                {% endfor %}
+                </ul>
+                <a href="#" class="short-description__button button default is-hidden-xs" role="button">Попробуйте <strong>30 дней</strong> бесплатно</a>
+            </div>
+            <div class="short-description__img col-lg-7 col-md-7 col-lg-offset-1 col-md-offset-1">
+                <a href="#" class="short-description__button button default is-visible-xs" role="button">Попробуйте <strong>30 дней</strong> бесплатно</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="short-description__description">
+    <div class="container">
+        <div class="row">
+            <p class="col-lg-10 col-md-10 center-block">
+                Если вы ищете онлайн программу для управленческого учета, без сложных терминалов и с возможностью выставления счетов то Waltex вам идеально подойдет
+            </p>
+        </div>
+        <div class="row"><span class="section-icon arrow"></span></div>
+    </div>
+</section>

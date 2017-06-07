@@ -1,0 +1,25 @@
+{% set indicatorItems = [
+    "Сколько денег приносит бизнес",
+    "Куда уходят деньги",
+    "Как оптимизировать расходы",
+    "На чем компания зарабатывает больше всего",
+    "Какие клиенты приносят вам больше всего денег"
+] %}
+
+<section class="indicators section">
+    <div class="container">
+        <div class="row">
+            <p class="indicators__title section-title col-lg-9 col-md-9 col-lg-offset-1 col-md-offset-1">
+                Заносите <strong>доходы и расходы</strong>, все отчеты система сформирует автоматически и покажет <strong>на графиках и таблицах</strong> важнейшие <span>показатели вашего бизнеса</span>
+            </p>
+        </div>
+        <div class="row relative-block">
+            <ul class="indicators__list section-list col-lg-6 col-md-6">
+                {% for item in indicatorItems %}
+                    <li class="indicators__item section-list-item item-{{ loop.index }}">{{ item }}</li>
+                {% endfor %}
+            </ul>
+            <div class="indicators__img col-lg-6 col-md-6"></div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,45 @@
+{% set costs = [
+{
+    "month_col": "1 мес",
+    "old_cost": "990 р.",
+    "new_cost": "690 р."
+},{
+    "month_col": "3 мес",
+    "old_cost": "2 790 р.",
+    "new_cost": "1 790 р."
+},{
+    "month_col": "6 мес",
+    "old_cost": "3 990 р.",
+    "new_cost": "2 990 р."
+},{
+    "month_col": "12 мес",
+    "old_cost": "5 790 р.",
+    "new_cost": "4 790 р."
+}] %}
+
+<section class="cost section">
+    <div class="container">
+        <div class="row">
+            <span class="section-icon center-block"></span>
+        </div>
+        <div class="row">
+            <p class="cost__title section-title col-lg-12 col-md-12">
+                Стоимость сервиса
+            </p>
+            <p class="cost__subtitle col-lg-12 col-md-12">
+                Включены все возможности сервиса
+            </p>
+        </div>
+        <div class="row">
+            {% for cost in costs %}
+                <div class="cost__items col-lg-3 col-md-3">
+                    <div class="cost__item">
+                        <div class="cost__item-month">{{ cost.month_col }}</div>
+                        <div class="cost__item-old">{{ cost.old_cost }}</div>
+                        <div class="cost__item-new">{{ cost.new_cost }}</div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

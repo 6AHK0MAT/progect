@@ -1,0 +1,33 @@
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer__logo col-md-2 col-lg-2">
+                <a href="/" role="button"><img src="/media/imgs/logo-footer.png" alt=""></a>
+            </div>
+            <div class="footer__menu col-md-4 col-lg-4 row">
+                <ul class="clearfix">
+                {% for item in footerMenuItems %}
+                    <a href="{{ item.link }}"><li class="footer__menuitem item-{{ loop.index }} col-md-6 col-lg-6">{{ item.item }}</li></a>
+                {% endfor %}
+                </ul>
+            </div>
+            <div class="footer__contacts col-md-4 col-lg-4 pull-right">
+                <div class="row">
+                    <p class="col-md-6 col-lg-6 contacts-title">Мы в социальных сетях</p>
+                    <div class="social-links col-md-6 col-lg-6">
+                    {% for item in socialLinks %}
+                        <a href="{{ item.link }}" title="{{ item.name }}" class="social-links__icon {{ item.class }}"></a>
+                    {% endfor %}
+                    </div>
+                </div>
+                <div class="row">
+                    <p class="col-md-6 col-lg-6 footer__requisites contacts-title"><a href="#">Реквизиты</a></p>
+                </div>
+                <div class="row footer__copyright">
+                    <p class="col-md-6 col-lg-6">{{ copytight }}</p>
+                    <p class="col-mg-6 col-lg-6"><script>var mdate = new Date(); document.write(mdate.getFullYear());</script> Все права защищены</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

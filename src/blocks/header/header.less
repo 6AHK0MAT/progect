@@ -1,0 +1,124 @@
+.header {
+  width: 100%;
+  height: @header-height;
+  padding: 50px 0;
+  transition: height 0.7s;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+
+  @media @screen-no-retina {
+    height: @header-height /2;
+    padding: (50px /2) 0;
+  }
+
+  @media screen and (max-width: @screen-sm) {
+    height: @header-height-mobile;
+    padding: 48px 0 0;
+    background-color: @header-bg-color-mobile;
+
+    > .container > .row {
+      position: relative;
+    }
+  }
+  @media screen and (max-width: @screen-sm), @screen-no-retina {
+    height: @header-height-mobile /2;
+    padding: (48px /2) 0 0;
+  }
+
+  &.expanded {
+    height: auto;
+  }
+
+  &__logo {
+    @media screen and (max-width: @screen-sm) {
+      display: table;
+      width: auto;
+      margin: auto;
+      text-align: center;
+    }
+
+    img {
+      width: 351px;
+      height: auto;
+
+      @media @screen-no-retina {
+        width: 351px / 2;
+      }
+
+      // < 768
+      @media screen and (max-width: @screen-sm) {
+        width: 100%;
+        max-width: 253px;
+      }
+      @media screen and (max-width: @screen-sm), @screen-no-retina {
+        max-width: 253px /2;
+      }
+    }
+  }
+  &__menu {
+    @media screen and (max-width: @screen-sm) {
+      display: none;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      margin-top: 50px;
+      padding-left: 107px;
+
+      @media @screen-no-retina {
+        margin-top: 22px;
+        padding-left: 35px;
+      }
+
+      a:first-child li {
+        margin-left: 0;
+      }
+    }
+  }
+  &__menuitem {
+    display: block;
+    float: left;
+    margin: 0 35px;
+
+    color: lighten(@header-mm-item-color,10%);
+    font-size: 32px;
+    line-height: 24px;
+
+    @media @screen-no-retina {
+      margin: 0 17px;
+      font-size: 32px /2;
+      line-height: 1;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &.active {
+      color: @header-mm-item-color;
+    }
+  }
+  &__user {
+    margin-top: 25px;
+
+    @media @screen-no-retina {
+      margin-top: 11px;
+    }
+
+    @media screen and (max-width: @screen-sm) {
+      display: none;
+    }
+  }
+  &__user-button {
+    &.sign-in {
+      margin-right: 35px;
+
+      @media @screen-no-retina {
+        margin-right: 14px;
+        padding: 10px 23px;
+      }
+    }
+  }
+}

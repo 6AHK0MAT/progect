@@ -1,0 +1,43 @@
+.popup-log-in {
+  &__field {
+    &.email {
+      margin-bottom: 39px;
+
+      @media @screen-no-retina {
+        margin-bottom: 39px /2;
+      }
+    }
+    &.password {
+      margin-bottom: 60px;
+
+      @media @screen-no-retina {
+        margin-bottom: 60px /2;
+      }
+    }
+  }
+  &__button {
+    width: 341px !important;
+    margin: 0 !important;
+    display: inline-block !important;
+
+    @media @screen-no-retina {
+      width: 341px /2 !important;
+    }
+  }
+  &__remind-password {
+    color: @form-remind-color;
+    font-size: 30px;
+    line-height: 1;
+    text-decoration: underline;
+    margin-left: 65px;
+
+    &:hover, &:focus {
+      text-decoration: none;
+    }
+
+    @media @screen-no-retina {
+      font-size: 30px /2;
+      margin-left: 65px /2;
+    }
+  }
+}

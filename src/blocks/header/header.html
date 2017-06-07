@@ -1,0 +1,22 @@
+<header class="header collapse">
+    <div class="container">
+        <div class="row">
+            <div class="header__logo col-md-2 col-lg-2">
+                <a href="/" role="button"><img src="/media/imgs/logo-header.png" alt=""></a>
+            </div>
+            <nav class="header__menu col-md-7 col-lg-7">
+                <ul class="clearfix">
+                {% for item in menuItems %}
+                    <a href="{{ item.link }}"><li class="header__menuitem {% if loop.index == activeMenuItem %}active{% endif %} item-{{ loop.index }}">{{ item.item }}</li></a>
+                {% endfor %}
+                </ul>
+            </nav>
+            <div class="header__user col-md-3 col-lg-3 pull-right">
+                <button role="button" class="header__user-button button disabled sign-in" data-popup-target="#popup-sign-in">Регистрация</button>
+                <button role="button" class="header__user-button button default log-in" data-popup-target="#popup-log-in">Вход</button>
+            </div>
+            {% include '../mobile-menu/mobile-menu.html' %}
+            {% include '../mobile-user/mobile-user.html' %}
+        </div>
+    </div>
+</header>

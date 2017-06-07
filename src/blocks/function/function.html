@@ -1,0 +1,34 @@
+{% set functionItems = [
+    'Выручка всего бизнеса и его доходность',
+    'Выручка по направлениям бизнеса',
+    'Состояние счетов и анализ выручки по каждому счету',
+    'Структура расходов',
+    'Количество заказов',
+    'Средний чек',
+    'Стоимость привлечения одного клиента',
+    'Выручка по клиентам',
+    'Выручка по менеджерам'
+] %}
+
+<section class="function section">
+    <div class="container">
+        <div class="row">
+            <span class="section-icon center-block"></span>
+        </div>
+        <div class="row">
+            <p class="function__title section-title col-lg-12 col-md-12">
+                Автоматизируйте финансовый анализ вашего бизнеса <br>
+                <span>Waltex покажет какая у вас</span>
+            </p>
+        </div>
+        <div class="row">
+            <div class="function__img col-lg-7 col-md-7 is-hidden-xs"></div>
+            <ul class="function__list section-list col-lg-5 col-md-5 col-lg-offset-1 col-md-offset-1">
+            {% for item in functionItems %}
+                <li class="function__item section-list-item item-{{ loop.index }}">{{ item }}</li>
+            {% endfor %}
+            </ul>
+            <div class="function__img is-visible-xs"></div>
+        </div>
+    </div>
+</section>

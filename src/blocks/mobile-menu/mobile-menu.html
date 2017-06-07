@@ -1,0 +1,10 @@
+<span id="mobile-menu-button" class="mobile-menu__button" role="button"></span>
+<div class="mobile-menu is-hidden col-md-12">
+  <ul class="mobile-menu__menu">
+      {% for item in menuItems %}
+        <a href="{{ item.link }}">
+          <li class="mobile-menu__item item-{{ loop.index }} {% if loop.index == activeMenuItem %}active{% endif %}">{{ item.item }}</li>
+        </a>
+      {% endfor %}
+  </ul>
+</div>

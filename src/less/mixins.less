@@ -1,0 +1,40 @@
+.button-mixin(@padding-vert: 25px,@padding-horz: 40px,@bg-color: transparent,@bg-color-hover: darken(#fff,10%),@text-color: #FFF,@text-size: 30px,@border-color: transparent,@border-width: 0) {
+  width: auto;
+  height: auto;
+  outline: none;
+  display: inline-block;
+  border-radius: 10px;
+  line-height: 1;
+  text-decoration: none;
+
+  border-color: @border-color;
+  border: @border-width solid;
+  padding: @padding-vert @padding-horz;
+  background-color: @bg-color;
+  color: @text-color;
+  font-size: @text-size;
+
+  @media @screen-no-retina {
+    padding: (@padding-vert - 15) (@padding-horz - 21);
+    border-radius: 10px /2;
+    font-size: @text-size /2;
+    border: (@border-width /2) solid;
+  }
+
+  &:hover, &:focus {
+    .mixin (@c) when not (@c = transperent) {
+      background-color: lighten(@c,10%);
+    }
+    .mixin (@c) when (@c = transperent) {
+      background-color: @bg-color-hover;
+    }
+
+    .mixin(@bg-color);
+    text-decoration: none;
+    outline: none !important;
+  }
+
+  &::-moz-focus-inner {
+    border: 0 !important;
+  }
+}
